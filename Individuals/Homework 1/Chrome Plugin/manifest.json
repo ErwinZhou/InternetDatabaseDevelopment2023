@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "ErwinZhou's first Chrome Extension",
+    "version": "1.0.1",
+    "description": "Trick or Treat!",
+    "author": "ErwinZhou@outlook.com",
+    "icons": {
+        "48": "src/icon.png"
+
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "48": "src/icon.png"
+        }
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "tabs",
+        "notifications",
+        "storage"
+    ]
+}
